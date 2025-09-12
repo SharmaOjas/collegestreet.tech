@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CollegeStreet.tech - By Students, For Students, Of Students</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__brand">
+          <a href="#home" class="nav__logo">CollegeStreet.tech</a>
+        </div>
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+        <button class="nav__toggle" aria-label="Toggle navigation">
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__media">
+            <video
+              class="video-player"
+              
+              poster="path/to/thumbnail.jpg"
+              width="100%"
+              height="400px"
+              aria-label="Video player"
+              autoplay
+            >
+              <source
+                src="WhatsApp Video 2025-07-28 at 13.25.58_bf69ae3d.mp4"
+                type="video/mp4"
+              />
+              <!-- You can add other formats for compatibility -->
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="hero__text">
+            <h1 class="hero__title">CollegeStreet.Tech</h1>
+            <p class="hero__subtitle">By Students, For Students, Of Students</p>
+            <p class="hero__description">
+              CollegeStreet.tech is a young technology startup dedicated to
+                revolutionizing financial analysis through advanced Artificial
+                Intelligence (AI). Our mission is to empower financial analysts
+                and investors with highly accurate, comprehensive, and unbiased
+                financial reports, dramatically streamlining their research
+                processes. All of this is executed by bright undergraduates
+                sharpening their skills on the CollegeStreet.tech platform.
+            </p>
+            <div class="hero__actions">
+              <button class="btn btn--primary btn--lg">Get Started</button>
+              <button class="btn btn--outline btn--lg">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating Popup -->
+      <div class="floating-popup" id="heroPopup">
+        <div class="popup-content">
+          <div class="popup-header">
+            <div class="popup-indicators">
+              <div class="indicator active"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+            </div>
+            <button class="popup-close">&times;</button>
+          </div>
+          <div class="popup-body">
+            <h4>AI-Powered Analysis</h4>
+            <p>
+              Advanced algorithms analyze financial data from multiple sources
+              to provide comprehensive insights.
+            </p>
+            <div class="popup-stats">
+              <div class="stat">
+                <span class="stat-number">95%</span>
+                <span class="stat-label">Accuracy</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Data Sources</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about__content">
+          <div class="about__text">
+            <h2 class="about__title">Our Mission</h2>
+            <p class="about__description">
+              CollegeStreet.tech harnesses cutting-edge AI to transform vast
+              publicly available financial data into structured, actionable
+              intelligence. Our platform provides young minds the opportunity to
+              grow, innovate, and shape the future of financial technology.
+              Founded on passion and driven by student talent, the platform is
+              committed to nurturing bright, inquisitive minds with
+              revolutionary ideas.
+            </p>
+            <p class="about__description">
+              Leading this initiative is Dr. S.B. Ghosh, retired scientist of
+              Bhabha Atomic Research Centre, Mumbai, holding a PhD in Plant
+              Genetic Engineering and an MBA in Financial Markets. His passion
+              for mentoring young talents is the foundation of
+              CollegeStreet.tech’s vision.
+            </p>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-card__number">100%</div>
+              <div class="stat-card__label">Students Oriented</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__number">500+</div>
+              <div class="stat-card__label">Reports Generated</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__number">AI-Powered</div>
+              <div class="stat-card__label">Analysis Tools</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__number">24/7</div>
+              <div class="stat-card__label">AI Processing</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="services__title">Our Services</h2>
+
+        <div class="service-item">
+          <div class="service-content">
+            <div class="service-text">
+              <h3>Our Innovative Approach</h3>
+              <p>
+                We leverage advanced AI algorithms that meticulously analyze a
+            diverse and extensive dataset including company annual and quarterly
+            reports, news articles capturing market sentiment, and transcripts
+            from quarterly conference calls and investor presentations. This
+            pipeline identifies important financial figures, strategic
+            initiatives, performance metrics, and leadership insights,
+            converting raw data into precise, actionable financial intelligence.
+              </p>
+              <ul class="service-features">
+                <li>Earnings Calls</li>
+                <li>Key Insights</li>
+                <li>Automated reporting</li>
+              </ul>
+            </div>
+            <div class="service-media">
+              <div class="video-container">
+                <video
+                  class="video-player"
+                  
+                  poster="path/to/thumbnail.jpg"
+                  width="100%"
+                  height="500px"
+                  aria-label="Video player"
+                  autoplay
+                >
+                  <source
+                    src="6799742-uhd_2160_3840_30fps.mp4"
+                    type="video/mp4"
+                  />
+                  <!-- You can add other formats for compatibility -->
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Floating Popup -->
+          <div class="floating-popup service-popup" id="servicePopup1">
+            <div class="popup-content">
+              <div class="popup-header">
+                <div class="popup-indicators">
+                  <div class="indicator active"></div>
+                  <div class="indicator"></div>
+                  <div class="indicator"></div>
+                </div>
+              </div>
+              <div class="popup-body">
+                <h4>Data Sources</h4>
+                <div class="data-sources">
+                  <div class="source-item">📊 Annual Reports</div>
+                  <div class="source-item">📈 Market Data</div>
+                  <div class="source-item">📰 News Articles</div>
+                  <div class="source-item">🎤 Conference Calls</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-content">
+            <div class="service-media">
+              <div class="video-container">
+                <video
+                  class="video-player"
+                  autoplay
+                  poster="path/to/thumbnail.jpg"
+                  width="100%"
+                  height="500px"
+                  aria-label="Video player"
+                  
+                >
+                  <source
+                    src="7579577-uhd_4096_2160_25fps.mp4"
+                    type="video/mp4"
+                  />
+                  <!-- You can add other formats for compatibility -->
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <div class="service-text">
+              <h3>Value Proposition for Analysts and Investors</h3>
+              <p>
+                Traditionally, financial analysts spend significant time manually
+              gathering and cross-referencing data from multiple sources,
+              leading to fragmented insights and potential biases.
+              CollegeStreet.tech addresses this by offering consolidated
+              information, drastically improving time efficiency, minimizing
+              human bias through AI-driven processes, and enhancing
+              decision-making with timely, comprehensive, and objective
+              financial reports.
+              </p>
+              <div class="value-points">
+                <div class="value-point">
+                  <div class="value-icon">⚡</div>
+                  <div class="value-text">
+                    <h4>Speed</h4>
+                    <p>Reduce research time by 80%</p>
+                  </div>
+                </div>
+                <div class="value-point">
+                  <div class="value-icon">🎯</div>
+                  <div class="value-text">
+                    <h4>Accuracy</h4>
+                    <p>AI-powered precision analysis</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Floating Popup 2 -->
+          <div class="floating-popup service-popup" id="servicePopup2">
+            <div class="popup-content">
+              <div class="popup-header">
+                <div class="popup-indicators">
+                  <div class="indicator"></div>
+                  <div class="indicator active"></div>
+                  <div class="indicator"></div>
+                </div>
+              </div>
+              <div class="popup-body">
+                <h4>Benefits</h4>
+                <div class="benefits-list">
+                  <div class="benefit-item">✓ Consolidated Reports</div>
+                  <div class="benefit-item">✓ Data Processingn</div>
+                  <div class="benefit-item">✓ Time Efficiency</div>
+                  <div class="benefit-item">✓ Data Accuracy</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collaboration Section -->
+    <section class="collaboration">
+      <div class="container">
+        <div class="colorchan">
+      <section id="collaboration" class="section reveal-on-scroll">
+        <div class="container">
+          <h2>Collaboration with MPSTME</h2>
+          <p class="hero__description">
+            We are proud to collaborate with Mukesh Patel School of Technology
+            Management and Engineering (MPSTME), where talented student interns
+            contribute vitally to our development efforts. This partnership
+            provides invaluable hands-on experience in applying advanced AI and
+            data science techniques to real-world financial challenges,
+            preparing these bright young minds to be future leaders in
+            technology and finance.
+          </p>
+        </div>
+      </section>
+
+      <!-- Additional Info Section -->
+      <section id="additional-info" class="section reveal-on-scroll">
+        <div class="container">
+          <h2>Innovative Tools and Student-Driven Platform</h2>
+          <p p class="hero__description">
+            Beyond data analysis, young minds at CollegeStreet.tech are
+            pioneering unique analytical tools focused on price-volume data of
+            equity assets, already implemented in trading decisions.
+            CollegeStreet.tech remains a platform by the students, for the
+            students, and of the students, nurturing passion for revolutionary
+            ideas.
+          </p>
+        </div>
+      </section>
+    </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <h3>CollegeStreet.tech</h3>
+            <p>
+              Empowering the next generation of financial analysts through
+              AI-driven technology and student innovation.
+            </p>
+          </div>
+          <div class="footer__section">
+            <h4>Quick Links</h4>
+            <ul class="footer__links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__section">
+            <h4>Contact Info</h4>
+            <div class="contact-info">
+              <p>📧 info@collegestreet.tech</p>
+              <p>📞 +1 (555) 123-4567</p>
+              <p>📍 Innovation District, Tech City</p>
+            </div>
+          </div>
+          <div class="footer__section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#" target="_blank">LinkedIn</a>
+              <a href="#" target="_blank">Twitter</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2025 CollegeStreet.tech. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
