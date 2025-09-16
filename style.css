@@ -93,6 +93,8 @@
   --font-size-2xl: 20px;
   --font-size-3xl: 24px;
   --font-size-4xl: 30px;
+  --font-size-5xl: 36px;
+  --font-size-6xl: 42px;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 550;
@@ -114,6 +116,8 @@
   --space-20: 20px;
   --space-24: 24px;
   --space-32: 32px;
+  --space-39: 39px;
+  --space-49: 49px;
 
   /* Border Radius */
   --radius-sm: 6px;
@@ -757,7 +761,8 @@ select.form-control {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-16) var(--space-16);
+  /* padding: var(--space-16) var(--space-16); */
+  padding: 50px;
   max-height: 80px;
 }
 
@@ -786,7 +791,7 @@ select.form-control {
 }
 
 .nav__link {
-  color: var(--color-primary);
+  color: var(--color-white);
   text-decoration: none;
   font-weight: var(--font-weight-medium);
   font-size: var(--font-size-base);
@@ -830,7 +835,7 @@ select.form-control {
 .hero__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-32);
+  gap: var(--space-49);
   align-items: center;
   min-height: 600px;
 }
@@ -844,7 +849,7 @@ select.form-control {
 }
 
 .hero__title {
-  font-size: var(--font-size-4xl);
+  font-size: var(--font-size-5xl);
   margin-bottom: var(--space-16);
   color: var(--color-text);
   line-height: var(--line-height-tight);
@@ -858,7 +863,7 @@ select.form-control {
 }
 
 .hero__description {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-2xl);
   color: var(--color-text-secondary);
   line-height: var(--line-height-normal);
   margin-bottom: var(--space-32);
@@ -1071,13 +1076,13 @@ select.form-control {
 }
 
 .about__title {
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-4xl);
   margin-bottom: var(--space-24);
   color: var(--color-text);
 }
 
 .about__description {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-2xl);
   color: var(--color-text-secondary);
   line-height: var(--line-height-normal);
 }
@@ -1121,7 +1126,7 @@ select.form-control {
 
 .services__title {
   text-align: center;
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-4xl);
   margin-bottom: var(--space-32);
   color: var(--color-text);
 }
@@ -1147,7 +1152,7 @@ select.form-control {
 }
 
 .service-text h3 {
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-3xl);
   margin-bottom: var(--space-16);
   color: var(--color-text);
 }
@@ -1156,6 +1161,7 @@ select.form-control {
   color: var(--color-text-secondary);
   line-height: var(--line-height-normal);
   margin-bottom: var(--space-20);
+  font-size: var(--font-size-2xl);
 }
 
 .service-features {
@@ -1765,3 +1771,16 @@ html {
   /* Add any other dark variables you want to force */
 }
 
+
+.nav__logo-image {
+  height: 80px; /* adjust as needed */
+  width: auto;
+  vertical-align: middle;
+  margin-right: 0px;
+}
+
+
+.header {
+  background-color: var(--color-surface) !important;
+  transition: none !important;
+}

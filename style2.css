@@ -1119,21 +1119,48 @@ select.form-control {
   color: var(--color-text-secondary);
   font-size: var(--font-size-4xl);
 }
+.nav__logo {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  text-decoration: none;
+  letter-spacing: var(--letter-spacing-tight);
+}
+.nav__logo-image {
+  height: 40px;           /* Adjust height as needed */
+  width: auto;            /* Maintain aspect ratio */
+  vertical-align: middle; /* Aligns nicely with text if any */
+  margin-left: 8px;       /* Space between the text and image */
+  border-radius: 4px;     /* Optional: rounded corners */
+  display: inline-block;  /* Keep inline with text */
+  object-fit: contain;    /* Ensures the image fits nicely */
+}
+.nav__logo-image {
+  height: 80px; /* adjust as needed */
+  width: auto;
+  vertical-align: middle;
+  margin-right: 0px;
+}
+
 
 .member-info h3 {
   margin-bottom: var(--space-8);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-4xl);
 }
 
 .member-role {
   color: var(--color-primary);
   font-weight: var(--font-weight-medium);
   margin-bottom: var(--space-12);
+  font-size: var(--font-size-2xl);
+
 }
 
 .member-bio {
   color: var(--color-text-secondary);
-  line-height: 1.6;
+  line-height: 1.3;
+  font-size: var(--font-size-2xl);
+
 }
 
 /* Blog grid */
@@ -1666,7 +1693,7 @@ html {
   transition: transform 0.3s ease;
   margin-bottom: 50%;
   margin-left: 0px;
-  width: 1000px;           /* makes the card 1.5x the grid cell width */
+  width: 100%;           /* makes the card 1.5x the grid cell width */
   max-width: none;       /* prevents unwanted shrinking if you used max-width */
 
 
