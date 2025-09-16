@@ -1,5 +1,3 @@
-// CollegeStreet.tech Interactive Features
-
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile Navigation Toggle
     const navToggle = document.querySelector('.nav__toggle');
@@ -43,22 +41,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Smooth Scrolling for Navigation Links
+    // Smooth Scrolling for Navigation Links (only for internal anchors)
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            
-            if (targetSection) {
-                const headerHeight = document.querySelector('.header').offsetHeight;
-                const targetPosition = targetSection.offsetTop - headerHeight - 20;
-                
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
+            const href = this.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                const targetSection = document.querySelector(href);
+                if (targetSection) {
+                    const headerHeight = document.querySelector('.header').offsetHeight;
+                    const targetPosition = targetSection.offsetTop - headerHeight - 20;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
             }
+            // For other hrefs (like team.html), allow default navigation
         });
     });
 
@@ -282,7 +281,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 300);
         }
 
-        // Close button event listener - Fixed!
+        // Close button event listener
         if (closeBtn) {
             closeBtn.addEventListener('click', function(e) {
                 e.preventDefault();
