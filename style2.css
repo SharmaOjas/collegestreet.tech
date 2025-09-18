@@ -1710,6 +1710,14 @@ html {
   gap: 1px;              /* Add some horizontal space between image and text */
 }
 
+@media (max-width: 620px) {
+  .team-member {
+  display: grid;          /* Make container a flexbox */
+  align-items: center;    /* Vertically center image and text */
+  gap: 1px;              /* Add some horizontal space between image and text */
+}
+}
+
 /* Optional: Fix image size for consistent layout */
 .member-photo {
   flex-shrink: 0;         /* Prevent image from shrinking */
