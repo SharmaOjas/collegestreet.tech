@@ -876,7 +876,7 @@ select.form-control {
 .site-header {
   position: sticky;
   top: 0;
-  background-color: rgba(252, 252, 249, 0.95);
+  background-color: var(--color-surface) !important;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-border);
   z-index: 100;
