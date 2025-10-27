@@ -532,5 +532,83 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Announcement (top-right) behavior with debug/force-show support
+    (function initSiteAnnouncement() {
+        // Set to true to always show the announcement on every page load (ignore prior dismissals)
+        const ALWAYS_SHOW_ANNOUNCEMENT = true; // <-- user requested: show popup after every reload
+
+        const ANNOUNCE_KEY = 'site_announcement_dismissed_v1';
+        const announceEl = document.getElementById('site-announcement');
+        if (!announceEl) {
+            console.log('initSiteAnnouncement: #site-announcement not found');
+            return;
+        }
+
+        // If URL contains ?show_announce=1 we force showing (useful for testing)
+        const params = new URLSearchParams(window.location.search || '');
+        const forceShow = params.get('show_announce') === '1';
+
+        try {
+            if (!forceShow && !ALWAYS_SHOW_ANNOUNCEMENT && localStorage.getItem(ANNOUNCE_KEY)) {
+                console.log('initSiteAnnouncement: previously dismissed — not showing');
+                announceEl.style.display = 'none';
+                return;
+            }
+        } catch (err) {
+            // localStorage may be unavailable in some environments (private mode)
+            console.log('initSiteAnnouncement: localStorage read failed', err);
+        }
+
+        // Show announcement after a short delay
+        console.log('initSiteAnnouncement: scheduling show (forceShow=' + forceShow + ')');
+        setTimeout(() => {
+            announceEl.classList.add('show');
+        }, 800);
+
+        // Close/dismiss handler
+        const closeBtn = announceEl.querySelector('.site-announcement__close');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                announceEl.classList.remove('show');
+                try {
+                    localStorage.setItem(ANNOUNCE_KEY, '1');
+                } catch (err) {
+                    console.log('initSiteAnnouncement: localStorage write failed', err);
+                }
+                setTimeout(() => {
+                    announceEl.style.display = 'none';
+                }, 300);
+            });
+        }
+
+        // Keyboard: Escape to dismiss announcement
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && announceEl.classList.contains('show')) {
+                announceEl.classList.remove('show');
+                try {
+                    localStorage.setItem(ANNOUNCE_KEY, '1');
+                } catch (err) {
+                    console.log('initSiteAnnouncement: localStorage write failed', err);
+                }
+                setTimeout(() => {
+                    announceEl.style.display = 'none';
+                }, 300);
+            }
+        });
+
+        // Track CTA clicks
+        const cta = announceEl.querySelector('.site-announcement__link');
+        if (cta) {
+            cta.addEventListener('click', function () {
+                try {
+                    trackUserInteraction('announcement_cta', 'hackathon_2nov');
+                } catch (err) {
+                    // no-op
+                }
+            });
+        }
+    })();
+
     console.log('CollegeStreet.tech application initialized successfully');
 });
