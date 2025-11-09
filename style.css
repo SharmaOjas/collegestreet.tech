@@ -1863,5 +1863,36 @@ html {
 
 
 .hero__actions {
+  margin-top: 15px;
   margin-bottom: 40px; /* adjust value as needed (20px, 60px, etc.) */
+}
+
+
+
+/* Make the secondary button stand out more */
+.btn--secondary {
+  background-color: var(--color-orange-400); /* Warm accent for visibility */
+  color: var(--color-white);
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-base);
+  padding: 12px 28px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(var(--color-orange-500-rgb), 0.25);
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-orange-500);
+  box-shadow: 0 6px 16px rgba(var(--color-orange-500-rgb), 0.35);
+  transform: translateY(-2px);
+}
+
+.btn--secondary:active {
+  background-color: var(--color-orange-400);
+  transform: translateY(0);
+}
+
+.hero__actions {
+  margin-bottom: 40px;
+  text-align: center;
 }
