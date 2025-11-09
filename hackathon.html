@@ -6,8 +6,9 @@
     <title>CollegeStreet.tech — Hackathon</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <!-- Header (copied from index.html to keep consistency) -->
+    <!-- ================= Header ================= -->
     <header class="header">
       <nav class="nav container">
         <div class="nav__brand">
@@ -28,6 +29,7 @@
           <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
           <li class="nav__item"><a href="team.html" class="nav__link">Our Team</a></li>
         </ul>
+
         <button class="nav__toggle" aria-label="Toggle navigation">
           <span class="nav__toggle-line"></span>
           <span class="nav__toggle-line"></span>
@@ -36,7 +38,7 @@
       </nav>
     </header>
 
-    <!-- Hackathon Hero -->
+    <!-- ================= Hero Section ================= -->
     <main class="hero">
       <div class="container">
         <div class="hero__content">
@@ -46,15 +48,23 @@
             <p class="hero__description">
               We're excited to host our student-run hackathon focused on financial
               data, AI-driven trading strategies, and web tooling. Teams will
-              build projects in 24 hours, get mentorship from industry and
+              build projects in 12 hours, get mentorship from industry and
               academic experts, and compete for prizes.
             </p>
+
             <div class="hero__actions">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0cCtw2k6PxlzAIML-wMB3PNsJAIGVUXMICwjTu_tfgpQdzw/viewform?usp=header" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Register</a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf0cCtw2k6PxlzAIML-wMB3PNsJAIGVUXMICwjTu_tfgpQdzw/viewform?usp=header"
+                target="_blank"
+                rel="noopener"
+                class="btn btn--primary btn--lg"
+              >
+                Register
+              </a>
             </div>
           </div>
+
           <div class="hero__media">
-            <!-- Optionally include an image or video for the hackathon -->
             <div class="video-container">
               <div class="video-placeholder">
                 <div class="video-placeholder-content">
@@ -68,14 +78,110 @@
       </div>
     </main>
 
-    <!-- Footer (kept consistent) -->
+    <!-- ================= Moving Averages Section ================= -->
+    <section class="container section section--tech" id="moving-averages">
+      <div class="container">
+        <div class="hero__actions">
+          <a
+            href="Moving Average and Moving Average Crossover in Technical Analysis.docx"
+            download
+            class="btn btn--secondary"
+          >
+            Download Problem Statement brief (Word)
+          </a>
+        </div>
+
+        <h2>Moving Averages &amp; Moving Average Crossover</h2>
+
+        <h3>1. Introduction to Moving Averages</h3>
+        <p>
+          A moving average (MA) is a trend-following indicator used in technical analysis to smooth out price data by creating a constantly updated average price. It helps traders identify the direction of the market trend—whether upward, downward, or sideways—by filtering out short-term price fluctuations or “noise.”
+        </p>
+        <p>The basic principle:</p>
+        <p><strong>Moving Average = (Sum of Closing Prices over Period) / (Number of Periods)</strong></p>
+
+        <h3>2. Types of Moving Averages</h3>
+        <ul>
+          <li><strong>Simple Moving Average (SMA)</strong> – gives equal weight to all data points in the specified period. For example, a 20-day SMA is the average of the past 20 days’ closing prices.</li>
+          <li><strong>Exponential Moving Average (EMA)</strong> – gives more weight to recent prices, making it more responsive to new trends. Traders often prefer EMA for short-term trading.</li>
+          <li><strong>Weighted Moving Average (WMA)</strong> – assigns varying weights to data points, emphasizing more recent values while still considering the entire dataset.</li>
+        </ul>
+        <p>Participants have the freedom to use any one of the above 3 MAs.</p>
+
+        <h3>3. Purpose and Use in Stock Charts</h3>
+        <p>Moving averages are usually plotted over price charts and used to:</p>
+        <ol>
+          <li>Identify market trends (rising MA for uptrend, falling MA for downtrend)</li>
+          <li>Determine support and resistance levels</li>
+          <li>Generate buy or sell signals when combined with price action or other averages</li>
+          <li>Smooth out volatility for clearer visualization of underlying price direction</li>
+        </ol>
+        <p>
+          On any asset price chart one can draw moving average of any timeframe/period. The most commonly used moving averages are of 9 days, 10 days, 12 days, 20 days, 26 days, 50 days, 100 days and 200 days. Shorter the time frame more agile is the MA curve and longer the time frame smoother is the MA curve.
+        </p>
+
+        <h3>4. Moving Average Crossover Concept</h3>
+        <p>
+          A moving average crossover occurs when two moving averages of different timeframes intersect, signaling potential trend reversals or confirmations. A faster (shorter period) moving average reacts quickly to price changes, while a slower (longer period) moving average changes direction more gradually and represents the broader trend.
+        </p>
+        <p>When the faster MA crosses the slower MA, traders interpret it as a signal:</p>
+        <ul>
+          <li><strong>Bullish crossover</strong>: Short-term MA crosses from below and goes above long-term MA indicating a possible uptrend.</li>
+          <li><strong>Bearish crossover</strong>: Short-term MA crosses from above and goes below long-term MA indicating a possible downtrend.</li>
+        </ul>
+        <p>Examples: The 50-day MA crossing above the 200-day MA forms a <em>Golden Cross</em>. The 50-day MA crossing below the 200-day MA forms a <em>Death Cross</em>.</p>
+
+        <h3>5. Types of Moving Average Crossover Strategies</h3>
+        <ul>
+          <li><strong>Single Moving Average Crossover (Price vs MA)</strong>: A signal occurs when the stock price itself crosses the moving average line.</li>
+          <li><strong>Double Moving Average Crossover</strong>: Uses two different MAs (e.g., 20-day and 50-day) to capture changes in trend direction.</li>
+          <li><strong>Triple Moving Average Crossover</strong>: Uses three MAs (e.g., 10, 20, and 50 days) to reduce false signals and provide better confirmation of trend strength.</li>
+        </ul>
+
+        <h3>6. Practical Application in Technical Analysis</h3>
+        <p>
+          Short-term traders (e.g., intraday or swing traders) might use 5-day, 10-day, or 20-day MAs for quick signals. Long-term investors often look at 50-day, 100-day, or 200-day MAs for broader trend identification.
+        </p>
+        <p>A common setup:</p>
+        <p>If a 10-day EMA crosses above a 50-day EMA → Buy signal. If it crosses below → Sell or exit signal.</p>
+
+        <h3>7. Outline of the Competition</h3>
+        <p>
+          The participant(s) is expected to write his/her own code to identify an MA crossover and depending on bullish or bearish crossover the code should generate an entry signal and the participant should devise his/her exit strategy (i.e. % profit or % loss or number of days after entry). The developed code will use last 3 month’s historical stock data on NSE 500 stocks to backtest the code/strategy. Participants are free to use any NSE stock API. Some APIs may be paid. Since we are talking about MAs of days time frame and not minute or hour time frame, the participants have to use end of the day (i.e. closing price at 3:30 pm) closing price. UPSTOX trading platform provides free API in such case. Opening UPSTOX account is free. However, this should be taken as a piece of information and this is in no way a promotion of UPSTOX brokerage.
+        </p>
+
+        <p>Some YouTube resources:</p>
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/shorts/HS0XA46ePDI?feature=share" target="_blank" rel="noopener">
+              https://www.youtube.com/shorts/HS0XA46ePDI?feature=share
+            </a>
+          </li>
+        </ul>
+
+        <p>The backtest result of a strategy should be tabulated in the following format (participants should include):</p>
+        <ul>
+          <li>Strategy name / MA types and periods</li>
+          <li>Stocks tested (NSE 500 list subset)</li>
+          <li>Backtest period (last 3 months)</li>
+          <li>Entry criteria</li>
+          <li>Exit criteria</li>
+          <li>Return, Max drawdown, Win rate, Number of trades</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= Footer ================= -->
     <footer class="footer">
       <div class="container">
         <div class="footer__content">
           <div class="footer__section">
             <h3>CollegeStreet.tech</h3>
-            <p>Empowering the next generation of financial analysts through AI-driven technology and student innovation.</p>
+            <p>
+              Empowering the next generation of financial analysts through AI-driven technology and student innovation.
+            </p>
           </div>
+
           <div class="footer__section">
             <h4>Quick Links</h4>
             <ul class="footer__links">
@@ -85,12 +191,14 @@
               <li><a href="index.html#contact">Contact</a></li>
             </ul>
           </div>
+
           <div class="footer__section">
             <h4>Contact Info</h4>
             <div class="contact-info">
               <p>📧 info@collegestreet.tech</p>
             </div>
           </div>
+
           <div class="footer__section">
             <h4>Follow Us</h4>
             <div class="social-links">
@@ -100,6 +208,7 @@
             </div>
           </div>
         </div>
+
         <div class="footer__bottom">
           <p>&copy; 2025 CollegeStreet.tech. All rights reserved.</p>
         </div>

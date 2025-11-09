@@ -1860,3 +1860,8 @@ html {
     transform: translateY(8px) scale(0.98);
   }
 }
+
+
+.hero__actions {
+  margin-bottom: 40px; /* adjust value as needed (20px, 60px, etc.) */
+}

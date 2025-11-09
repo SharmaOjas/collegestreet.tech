@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Moving Averages & Crossover — Contest Brief</title>
+  </head>
+  <body>
+    <h1>Moving Averages &amp; Moving Average Crossover</h1>
+
+    <h2>1. Introduction to Moving Averages</h2>
+    <p>
+      A moving average (MA) is a trend-following indicator used in technical analysis to smooth out price data by creating a constantly updated average price. It helps traders identify the direction of the market trend—whether upward, downward, or sideways—by filtering out short-term price fluctuations or “noise.”
+    </p>
+    <p><strong>Moving Average = (Sum of Closing Prices over Period)/(Number of Periods)</strong></p>
+
+    <h2>2. Types of Moving Averages</h2>
+    <ul>
+      <li><strong>Simple Moving Average (SMA)</strong> – gives equal weight to all data points in the specified period. For example, a 20-day SMA is the average of the past 20 days’ closing prices.</li>
+      <li><strong>Exponential Moving Average (EMA)</strong> – gives more weight to recent prices, making it more responsive to new trends. Traders often prefer EMA for short-term trading.</li>
+      <li><strong>Weighted Moving Average (WMA)</strong> – assigns varying weights to data points, emphasizing more recent values while still considering the entire dataset.</li>
+    </ul>
+    <p>Participants may use any one of the above MAs.</p>
+
+    <h2>3. Purpose and Use in Stock Charts</h2>
+    <ol>
+      <li>Identify market trends (rising MA for uptrend, falling MA for downtrend)</li>
+      <li>Determine support and resistance levels</li>
+      <li>Generate buy or sell signals when combined with price action or other averages</li>
+      <li>Smooth out volatility for clearer visualization of underlying price direction</li>
+    </ol>
+    <p>Common MA timeframes include 9, 10, 12, 20, 26, 50, 100 and 200 days.</p>
+
+    <h2>4. Moving Average Crossover Concept</h2>
+    <p>
+      A moving average crossover occurs when two moving averages of different timeframes intersect, signaling potential trend reversals or confirmations. A faster (shorter period) MA reacts quickly; a slower (longer period) MA represents the broader trend.
+    </p>
+    <ul>
+      <li><strong>Bullish crossover</strong>: Short-term MA crosses above long-term MA (possible uptrend)</li>
+      <li><strong>Bearish crossover</strong>: Short-term MA crosses below long-term MA (possible downtrend)</li>
+    </ul>
+    <p>Examples: Golden Cross (50-day above 200-day) and Death Cross (50-day below 200-day).</p>
+
+    <h2>5. Types of Moving Average Crossover Strategies</h2>
+    <ul>
+      <li>Single Moving Average Crossover (Price vs MA)</li>
+      <li>Double Moving Average Crossover (e.g., 20-day and 50-day)</li>
+      <li>Triple Moving Average Crossover (e.g., 10, 20, 50-day)</li>
+    </ul>
+
+    <h2>6. Practical Application</h2>
+    <p>
+      Short-term traders might use 5-day, 10-day, or 20-day MAs. Long-term investors often look at 50-day, 100-day, or 200-day MAs.
+    </p>
+    <p>Common rule: If 10-day EMA crosses above 50-day EMA → Buy. If it crosses below → Sell/exit.</p>
+
+    <h2>7. Outline of the competition</h2>
+    <p>
+      Participants must write code to detect MA crossovers and generate entry signals (bullish/bearish). They should define exit rules (percentage profit/loss or fixed number of days). Use last 3 months' historical end-of-day (closing) data for NSE 500 stocks for backtesting. Participants may use any NSE stock API (some are paid). For daily MAs use EOD closing price (3:30 pm). UPSTOX provides a free API as one option but this is informational only, not a promotion.
+    </p>
+
+    <h3>Backtest output suggestions</h3>
+    <ul>
+      <li>Strategy name and MA periods</li>
+      <li>Stocks tested</li>
+      <li>Backtest period</li>
+      <li>Entry &amp; exit rules</li>
+      <li>Performance: return, max drawdown, win rate, number of trades</li>
+    </ul>
+
+    <h3>Reference</h3>
+    <p><a href="https://www.youtube.com/shorts/HS0XA46ePDI?feature=share">YouTube short on MA crossover</a></p>
+
+    <p>Good luck — implement, backtest, and document your results.</p>
+  </body>
+</html>
