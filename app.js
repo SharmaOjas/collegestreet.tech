@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Mobile Navigation Toggle
     const navToggle = document.querySelector('.nav__toggle');
     const navMenu = document.querySelector('.nav__menu');
@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Toggle mobile menu
     if (navToggle && navMenu) {
-        navToggle.addEventListener('click', function(e) {
+        navToggle.addEventListener('click', function (e) {
             e.preventDefault();
             e.stopPropagation();
             navToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
-            
+
             // Prevent scrolling when menu is open
             if (navMenu.classList.contains('active')) {
                 document.body.style.overflow = 'hidden';
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Close mobile menu when clicking on nav links
     navLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
             if (navToggle && navMenu) {
                 navToggle.classList.remove('active');
                 navMenu.classList.remove('active');
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Close mobile menu when clicking outside
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
         if (navToggle && navMenu && !navToggle.contains(e.target) && !navMenu.contains(e.target)) {
             navToggle.classList.remove('active');
             navMenu.classList.remove('active');
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Smooth Scrolling for Navigation Links (only for internal anchors)
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
             if (href && href.startsWith('#')) {
                 e.preventDefault();
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updateHeaderOnScroll() {
         const currentScrollY = window.scrollY;
-        
+
         if (currentScrollY > 50) {
             header.style.background = 'rgba(255, 255, 253, 0.95)';
             header.style.backdropFilter = 'blur(10px)';
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
         rootMargin: '0px 0px -50px 0px'
     };
 
-    const observer = new IntersectionObserver(function(entries) {
+    const observer = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add fade-in class to elements that should animate
     const animatedElements = document.querySelectorAll('.hero__text, .hero__media, .about__text, .stats-grid, .service-item, .collaboration__content, .footer__content');
-    
+
     animatedElements.forEach(el => {
         el.classList.add('fade-in');
         observer.observe(el);
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const popup = document.getElementById(popupId);
             if (popup) {
                 popup.classList.add('show');
-                
+
                 // Auto-hide after 10 seconds if on desktop
                 if (window.innerWidth > 768) {
                     popupTimeouts[popupId] = setTimeout(() => {
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Close popups when clicking the close button
     document.querySelectorAll('.popup-close').forEach(closeBtn => {
-        closeBtn.addEventListener('click', function(e) {
+        closeBtn.addEventListener('click', function (e) {
             e.preventDefault();
             e.stopPropagation();
             const popup = this.closest('.floating-popup');
@@ -155,18 +155,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Show/hide popups based on scroll position (desktop only)
     let ticking = false;
-    
+
     function updatePopupsOnScroll() {
         if (window.innerWidth <= 768) return; // Skip on mobile
-        
+
         const scrollY = window.scrollY;
         const windowHeight = window.innerHeight;
-        
+
         // Hero popup logic
         const heroSection = document.getElementById('home');
         if (heroSection) {
             const heroRect = heroSection.getBoundingClientRect();
-            
+
             if (heroRect.top < windowHeight && heroRect.bottom > 0) {
                 if (!document.getElementById('heroPopup').classList.contains('show')) {
                     showPopup('heroPopup', 500);
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const serviceSection = document.getElementById('services');
         if (serviceSection) {
             const serviceRect = serviceSection.getBoundingClientRect();
-            
+
             if (serviceRect.top < windowHeight && serviceRect.bottom > 0) {
                 if (!document.getElementById('servicePopup1').classList.contains('show')) {
                     showPopup('servicePopup1', 1000);
@@ -208,11 +208,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Video Placeholder Interactions
     const videoPlaceholders = document.querySelectorAll('.video-placeholder');
-    
+
     videoPlaceholders.forEach(video => {
-        video.addEventListener('click', function() {
+        video.addEventListener('click', function () {
             this.classList.add('loading');
-            
+
             // Simulate video loading
             setTimeout(() => {
                 this.classList.remove('loading');
@@ -221,14 +221,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Hover effect for play button
-        video.addEventListener('mouseenter', function() {
+        video.addEventListener('mouseenter', function () {
             const playButton = this.querySelector('.play-button');
             if (playButton) {
                 playButton.style.transform = 'scale(1.1)';
             }
         });
 
-        video.addEventListener('mouseleave', function() {
+        video.addEventListener('mouseleave', function () {
             const playButton = this.querySelector('.play-button');
             if (playButton) {
                 playButton.style.transform = 'scale(1)';
@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Close button event listener
         if (closeBtn) {
-            closeBtn.addEventListener('click', function(e) {
+            closeBtn.addEventListener('click', function (e) {
                 e.preventDefault();
                 e.stopPropagation();
                 closeModal();
@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Click overlay to close
         if (overlay) {
-            overlay.addEventListener('click', function(e) {
+            overlay.addEventListener('click', function (e) {
                 if (e.target === overlay) {
                     closeModal();
                 }
@@ -316,7 +316,7 @@ document.addEventListener('DOMContentLoaded', function() {
             firstFocusable.focus();
         }
 
-        modal.addEventListener('keydown', function(e) {
+        modal.addEventListener('keydown', function (e) {
             if (e.key === 'Tab') {
                 if (e.shiftKey) {
                     if (document.activeElement === firstFocusable) {
@@ -336,11 +336,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Popup Indicators Animation
     function animatePopupIndicators() {
         const popupGroups = document.querySelectorAll('.popup-indicators');
-        
+
         popupGroups.forEach(group => {
             const indicators = group.querySelectorAll('.indicator');
             let currentIndex = 0;
-            
+
             const interval = setInterval(() => {
                 // Check if popup still exists and is visible
                 const popup = group.closest('.floating-popup');
@@ -348,7 +348,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     clearInterval(interval);
                     return;
                 }
-                
+
                 indicators.forEach(indicator => indicator.classList.remove('active'));
                 if (indicators[currentIndex]) {
                     indicators[currentIndex].classList.add('active');
@@ -364,7 +364,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Responsive Popup Management
     function handleResize() {
         const isMobile = window.innerWidth <= 768;
-        
+
         popups.forEach(popup => {
             if (isMobile) {
                 // On mobile, show popups as static elements
@@ -385,7 +385,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         });
-        
+
         // Re-trigger popup display logic for desktop
         if (!isMobile) {
             setTimeout(() => {
@@ -401,21 +401,21 @@ document.addEventListener('DOMContentLoaded', function() {
     // Button Click Effects with Ripple
     const buttons = document.querySelectorAll('.btn');
     buttons.forEach(btn => {
-        btn.addEventListener('click', function(e) {
+        btn.addEventListener('click', function (e) {
             // Create ripple effect
             const ripple = document.createElement('span');
             const rect = this.getBoundingClientRect();
             const size = Math.max(rect.width, rect.height);
             const x = e.clientX - rect.left - size / 2;
             const y = e.clientY - rect.top - size / 2;
-            
+
             ripple.style.width = ripple.style.height = size + 'px';
             ripple.style.left = x + 'px';
             ripple.style.top = y + 'px';
             ripple.classList.add('ripple');
-            
+
             this.appendChild(ripple);
-            
+
             setTimeout(() => {
                 if (ripple.parentNode) {
                     ripple.parentNode.removeChild(ripple);
@@ -427,13 +427,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Parallax Effect for Hero Section (subtle)
     const hero = document.querySelector('.hero');
     const heroContent = document.querySelector('.hero__content');
-    
+
     function updateParallax() {
         if (!hero || !heroContent) return;
-        
+
         const scrolled = window.pageYOffset;
         const parallaxSpeed = 0.3;
-        
+
         if (scrolled < hero.offsetHeight) {
             heroContent.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
         }
@@ -441,7 +441,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize on page load
     handleResize();
-    
+
     // Show initial popups after a brief delay
     setTimeout(() => {
         if (window.innerWidth > 768) {
@@ -452,12 +452,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Performance optimized scroll handler
     let scrollTimeout;
     let rafId;
-    
+
     function optimizedScrollHandler() {
         if (rafId) {
             cancelAnimationFrame(rafId);
         }
-        
+
         rafId = requestAnimationFrame(() => {
             updateHeaderOnScroll();
             updateParallax();
@@ -468,7 +468,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', optimizedScrollHandler, { passive: true });
 
     // Accessibility improvements
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function (e) {
         // Close popups with Escape key
         if (e.key === 'Escape') {
             popups.forEach(popup => {
@@ -486,7 +486,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Add interaction tracking
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
         if (e.target.matches('.btn')) {
             trackUserInteraction('button_click', e.target.textContent.trim());
         }
@@ -513,18 +513,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize tooltips for better UX (if needed)
     const elementsWithTooltips = document.querySelectorAll('[data-tooltip]');
     elementsWithTooltips.forEach(element => {
-        element.addEventListener('mouseenter', function() {
+        element.addEventListener('mouseenter', function () {
             const tooltip = document.createElement('div');
             tooltip.className = 'tooltip';
             tooltip.textContent = this.getAttribute('data-tooltip');
             document.body.appendChild(tooltip);
-            
+
             const rect = this.getBoundingClientRect();
             tooltip.style.left = rect.left + (rect.width / 2) - (tooltip.offsetWidth / 2) + 'px';
             tooltip.style.top = rect.top - tooltip.offsetHeight - 10 + 'px';
         });
-        
-        element.addEventListener('mouseleave', function() {
+
+        element.addEventListener('mouseleave', function () {
             const tooltip = document.querySelector('.tooltip');
             if (tooltip) {
                 document.body.removeChild(tooltip);

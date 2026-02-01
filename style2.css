@@ -34,14 +34,22 @@
   --color-orange-400-rgb: 230, 129, 97;
 
   /* Background color tokens (Light Mode) */
-  --color-bg-1: rgba(59, 130, 246, 0.08); /* Light blue */
-  --color-bg-2: rgba(245, 158, 11, 0.08); /* Light yellow */
-  --color-bg-3: rgba(34, 197, 94, 0.08); /* Light green */
-  --color-bg-4: rgba(239, 68, 68, 0.08); /* Light red */
-  --color-bg-5: rgba(147, 51, 234, 0.08); /* Light purple */
-  --color-bg-6: rgba(249, 115, 22, 0.08); /* Light orange */
-  --color-bg-7: rgba(236, 72, 153, 0.08); /* Light pink */
-  --color-bg-8: rgba(6, 182, 212, 0.08); /* Light cyan */
+  --color-bg-1: rgba(59, 130, 246, 0.08);
+  /* Light blue */
+  --color-bg-2: rgba(245, 158, 11, 0.08);
+  /* Light yellow */
+  --color-bg-3: rgba(34, 197, 94, 0.08);
+  /* Light green */
+  --color-bg-4: rgba(239, 68, 68, 0.08);
+  /* Light red */
+  --color-bg-5: rgba(147, 51, 234, 0.08);
+  /* Light purple */
+  --color-bg-6: rgba(249, 115, 22, 0.08);
+  /* Light orange */
+  --color-bg-7: rgba(236, 72, 153, 0.08);
+  /* Light pink */
+  --color-bg-8: rgba(6, 182, 212, 0.08);
+  /* Light cyan */
 
   /* Semantic Color Tokens (Light Mode) */
   --color-background: var(--color-cream-50);
@@ -154,15 +162,23 @@
     --color-gray-200-rgb: 245, 245, 245;
 
     /* Background color tokens (Dark Mode) */
-    --color-bg-1: rgba(29, 78, 216, 0.15); /* Dark blue */
-    --color-bg-2: rgba(180, 83, 9, 0.15); /* Dark yellow */
-    --color-bg-3: rgba(21, 128, 61, 0.15); /* Dark green */
-    --color-bg-4: rgba(185, 28, 28, 0.15); /* Dark red */
-    --color-bg-5: rgba(107, 33, 168, 0.15); /* Dark purple */
-    --color-bg-6: rgba(194, 65, 12, 0.15); /* Dark orange */
-    --color-bg-7: rgba(190, 24, 93, 0.15); /* Dark pink */
-    --color-bg-8: rgba(8, 145, 178, 0.15); /* Dark cyan */
-    
+    --color-bg-1: rgba(29, 78, 216, 0.15);
+    /* Dark blue */
+    --color-bg-2: rgba(180, 83, 9, 0.15);
+    /* Dark yellow */
+    --color-bg-3: rgba(21, 128, 61, 0.15);
+    /* Dark green */
+    --color-bg-4: rgba(185, 28, 28, 0.15);
+    /* Dark red */
+    --color-bg-5: rgba(107, 33, 168, 0.15);
+    /* Dark purple */
+    --color-bg-6: rgba(194, 65, 12, 0.15);
+    /* Dark orange */
+    --color-bg-7: rgba(190, 24, 93, 0.15);
+    /* Dark pink */
+    --color-bg-8: rgba(8, 145, 178, 0.15);
+    /* Dark cyan */
+
     /* Semantic Color Tokens (Dark Mode) */
     --color-background: var(--color-charcoal-700);
     --color-surface: var(--color-charcoal-800);
@@ -214,15 +230,23 @@
   --color-gray-200-rgb: 245, 245, 245;
 
   /* Colorful background palette - Dark Mode */
-  --color-bg-1: rgba(29, 78, 216, 0.15); /* Dark blue */
-  --color-bg-2: rgba(180, 83, 9, 0.15); /* Dark yellow */
-  --color-bg-3: rgba(21, 128, 61, 0.15); /* Dark green */
-  --color-bg-4: rgba(185, 28, 28, 0.15); /* Dark red */
-  --color-bg-5: rgba(107, 33, 168, 0.15); /* Dark purple */
-  --color-bg-6: rgba(194, 65, 12, 0.15); /* Dark orange */
-  --color-bg-7: rgba(190, 24, 93, 0.15); /* Dark pink */
-  --color-bg-8: rgba(8, 145, 178, 0.15); /* Dark cyan */
-  
+  --color-bg-1: rgba(29, 78, 216, 0.15);
+  /* Dark blue */
+  --color-bg-2: rgba(180, 83, 9, 0.15);
+  /* Dark yellow */
+  --color-bg-3: rgba(21, 128, 61, 0.15);
+  /* Dark green */
+  --color-bg-4: rgba(185, 28, 28, 0.15);
+  /* Dark red */
+  --color-bg-5: rgba(107, 33, 168, 0.15);
+  /* Dark purple */
+  --color-bg-6: rgba(194, 65, 12, 0.15);
+  /* Dark orange */
+  --color-bg-7: rgba(190, 24, 93, 0.15);
+  /* Dark pink */
+  --color-bg-8: rgba(8, 145, 178, 0.15);
+  /* Dark cyan */
+
   /* Semantic Color Tokens (Dark Mode) */
   --color-background: var(--color-charcoal-700);
   --color-surface: var(--color-charcoal-800);
@@ -268,7 +292,7 @@
   --color-brown-600-rgb: 94, 82, 64;
   --color-teal-500-rgb: 33, 128, 141;
   --color-slate-900-rgb: 19, 52, 59;
-  
+
   /* Semantic Color Tokens (Light Mode) */
   --color-background: var(--color-cream-50);
   --color-surface: var(--color-cream-100);
@@ -307,9 +331,12 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-body, html {
+
+body,
+html {
   height: 100%;
-  margin: 0;}
+  margin: 0;
+}
 
 body {
   margin: 0;
@@ -339,18 +366,23 @@ h6 {
 h1 {
   font-size: var(--font-size-4xl);
 }
+
 h2 {
   font-size: var(--font-size-3xl);
 }
+
 h3 {
   font-size: var(--font-size-2xl);
 }
+
 h4 {
   font-size: var(--font-size-xl);
 }
+
 h5 {
   font-size: var(--font-size-lg);
 }
+
 h6 {
   font-size: var(--font-size-md);
 }
@@ -571,26 +603,20 @@ select.form-control {
 }
 
 .status--success {
-  background-color: rgba(
-    var(--color-success-rgb, 33, 128, 141),
-    var(--status-bg-opacity)
-  );
+  background-color: rgba(var(--color-success-rgb, 33, 128, 141),
+      var(--status-bg-opacity));
   color: var(--color-success);
-  border: 1px solid
-    rgba(var(--color-success-rgb, 33, 128, 141), var(--status-border-opacity));
+  border: 1px solid rgba(var(--color-success-rgb, 33, 128, 141), var(--status-border-opacity));
 }
 
 .status--error {
-  background-color: rgba(
-    var(--color-error-rgb, 192, 21, 47),
-    var(--status-bg-opacity)
-  );
+  background-color: rgba(var(--color-error-rgb, 192, 21, 47),
+      var(--status-bg-opacity));
   color: var(--color-error);
-  border: 1px solid
-    rgba(var(--color-error-rgb, 192, 21, 47), var(--status-border-opacity));
+  border: 1px solid rgba(var(--color-error-rgb, 192, 21, 47), var(--status-border-opacity));
 }
 
-.service-vstack-card2-test{
+.service-vstack-card2-test {
   background-color: var(--color-charcoal-700);
   width: 100%;
   padding-top: 100px;
@@ -598,23 +624,17 @@ select.form-control {
 }
 
 .status--warning {
-  background-color: rgba(
-    var(--color-warning-rgb, 168, 75, 47),
-    var(--status-bg-opacity)
-  );
+  background-color: rgba(var(--color-warning-rgb, 168, 75, 47),
+      var(--status-bg-opacity));
   color: var(--color-warning);
-  border: 1px solid
-    rgba(var(--color-warning-rgb, 168, 75, 47), var(--status-border-opacity));
+  border: 1px solid rgba(var(--color-warning-rgb, 168, 75, 47), var(--status-border-opacity));
 }
 
 .status--info {
-  background-color: rgba(
-    var(--color-info-rgb, 98, 108, 113),
-    var(--status-bg-opacity)
-  );
+  background-color: rgba(var(--color-info-rgb, 98, 108, 113),
+      var(--status-bg-opacity));
   color: var(--color-info);
-  border: 1px solid
-    rgba(var(--color-info-rgb, 98, 108, 113), var(--status-border-opacity));
+  border: 1px solid rgba(var(--color-info-rgb, 98, 108, 113), var(--status-border-opacity));
 }
 
 /* Container layout */
@@ -631,16 +651,19 @@ select.form-control {
     max-width: var(--container-sm);
   }
 }
+
 @media (min-width: 768px) {
   .container {
     max-width: var(--container-md);
   }
 }
+
 @media (min-width: 1024px) {
   .container {
     max-width: var(--container-lg);
   }
 }
+
 @media (min-width: 1280px) {
   .container {
     max-width: var(--container-xl);
@@ -651,24 +674,31 @@ select.form-control {
 .flex {
   display: flex;
 }
+
 .flex-col {
   flex-direction: column;
 }
+
 .items-center {
   align-items: center;
 }
+
 .justify-center {
   justify-content: center;
 }
+
 .justify-between {
   justify-content: space-between;
 }
+
 .gap-4 {
   gap: var(--space-4);
 }
+
 .gap-8 {
   gap: var(--space-8);
 }
+
 .gap-16 {
   gap: var(--space-16);
 }
@@ -676,16 +706,20 @@ select.form-control {
 .m-0 {
   margin: 0;
 }
+
 .mt-8 {
   margin-top: var(--space-8);
 }
+
 .mb-8 {
   margin-bottom: var(--space-8);
 }
+
 .mx-8 {
   margin-left: var(--space-8);
   margin-right: var(--space-8);
 }
+
 .my-8 {
   margin-top: var(--space-8);
   margin-bottom: var(--space-8);
@@ -694,18 +728,22 @@ select.form-control {
 .p-0 {
   padding: 0;
 }
+
 .py-8 {
   padding-top: var(--space-8);
   padding-bottom: var(--space-8);
 }
+
 .px-8 {
   padding-left: var(--space-8);
   padding-right: var(--space-8);
 }
+
 .py-16 {
   padding-top: var(--space-16);
   padding-bottom: var(--space-16);
 }
+
 .px-16 {
   padding-left: var(--space-16);
   padding-right: var(--space-16);
@@ -714,6 +752,7 @@ select.form-control {
 .block {
   display: block;
 }
+
 .hidden {
   display: none;
 }
@@ -743,8 +782,7 @@ select.form-control {
 
 @font-face {
   font-family: 'FKGroteskNeue';
-  src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2')
-    format('woff2');
+  src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2') format('woff2');
 }
 
 /* END PERPLEXITY DESIGN SYSTEM */
@@ -760,7 +798,12 @@ select.form-control {
 }
 
 /* Hero section */
-.hero {background-color: var(--color-surface);padding: var(--space-32) 0;height: 48vh;min-height: 70vh;}
+.hero {
+  background-color: var(--color-surface);
+  padding: var(--space-32) 0;
+  height: 48vh;
+  min-height: 70vh;
+}
 
 .hero h1 {
   font-size: var(--font-size-4xl);
@@ -930,7 +973,7 @@ select.form-control {
   .mobile-nav-toggle {
     display: inline-flex;
   }
-  
+
   .primary-nav {
     position: absolute;
     top: 100%;
@@ -945,11 +988,11 @@ select.form-control {
     gap: var(--space-8);
     min-width: 200px;
   }
-  
+
   .primary-nav.open {
     display: flex !important;
   }
-  
+
   .nav-list {
     flex-direction: column;
     gap: var(--space-8);
@@ -1006,12 +1049,12 @@ select.form-control {
     grid-template-columns: 1fr;
     gap: var(--space-24);
   }
-  
+
   .about-stats {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
+
   .stat-item {
     flex: 1;
     min-width: 150px;
@@ -1119,6 +1162,7 @@ select.form-control {
   color: var(--color-text-secondary);
   font-size: var(--font-size-4xl);
 }
+
 .nav__logo {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
@@ -1126,17 +1170,27 @@ select.form-control {
   text-decoration: none;
   letter-spacing: var(--letter-spacing-tight);
 }
+
 .nav__logo-image {
-  height: 40px;           /* Adjust height as needed */
-  width: auto;            /* Maintain aspect ratio */
-  vertical-align: middle; /* Aligns nicely with text if any */
-  margin-left: 8px;       /* Space between the text and image */
-  border-radius: 4px;     /* Optional: rounded corners */
-  display: inline-block;  /* Keep inline with text */
-  object-fit: contain;    /* Ensures the image fits nicely */
+  height: 40px;
+  /* Adjust height as needed */
+  width: auto;
+  /* Maintain aspect ratio */
+  vertical-align: middle;
+  /* Aligns nicely with text if any */
+  margin-left: 8px;
+  /* Space between the text and image */
+  border-radius: 4px;
+  /* Optional: rounded corners */
+  display: inline-block;
+  /* Keep inline with text */
+  object-fit: contain;
+  /* Ensures the image fits nicely */
 }
+
 .nav__logo-image {
-  height: 80px; /* adjust as needed */
+  height: 80px;
+  /* adjust as needed */
   width: auto;
   vertical-align: middle;
   margin-right: 0px;
@@ -1338,42 +1392,42 @@ html {
     min-height: 55vh;
     padding: var(--space-24) 0;
   }
-  
+
   .hero h1 {
     font-size: var(--font-size-3xl);
   }
-  
+
   .subtitle {
     font-size: var(--font-size-lg);
   }
-  
+
   .hero-description {
     font-size: var(--font-size-base);
   }
-  
+
   .video-placeholder {
     height: 250px;
   }
-  
+
   .video-placeholder.large {
     height: 300px;
   }
-  
+
   .play-button {
     width: 60px;
     height: 60px;
     font-size: var(--font-size-2xl);
   }
-  
+
   .section {
     padding: var(--space-24) 0;
   }
-  
+
   .section-title,
   .page-title {
     font-size: var(--font-size-2xl);
   }
-  
+
   .services-grid,
   .team-grid,
   .blog-grid {
@@ -1395,9 +1449,11 @@ html {
 }
 
 .hero-text {
-  text-align: left; /* Aligns text to the left; change to 'center' or 'right' as per your preference */
+  text-align: left;
+  /* Aligns text to the left; change to 'center' or 'right' as per your preference */
   /* Optional: Add padding or other styles if needed */
-  padding: 1rem; /* Example: Adds some internal spacing */
+  padding: 1rem;
+  /* Example: Adds some internal spacing */
   top: -394px;
   position: relative;
   margin-left: 666px;
@@ -1409,7 +1465,9 @@ html {
     grid-template-columns: 1fr;
     gap: 32px;
   }
-  .hero-media, .hero-text {
+
+  .hero-media,
+  .hero-text {
     justify-content: center;
     text-align: center;
   }
@@ -1421,8 +1479,10 @@ html {
 .services-grid {
   display: flex;
   flex-direction: column;
-  gap: 32px; /* or whatever space you like between cards */
-  max-width: 540px; /* adjust for your preference */
+  gap: 32px;
+  /* or whatever space you like between cards */
+  max-width: 540px;
+  /* adjust for your preference */
   margin: 0 auto;
 }
 
@@ -1479,6 +1539,7 @@ html {
     padding: 20px 12px;
     gap: 16px;
   }
+
   .service-icon {
     margin-right: 0;
     margin-bottom: 12px;
@@ -1503,7 +1564,7 @@ html {
   max-width: 1283px;
   min-height: 320px;
   background: var(--color-surface);
-  box-shadow: 0 8px 24px rgba(19,52,59,0.10);
+  box-shadow: 0 8px 24px rgba(19, 52, 59, 0.10);
   /* border-radius: 32px; */
   display: flex;
   flex-direction: row;
@@ -1519,7 +1580,7 @@ html {
   max-width: 1283px;
   min-height: 320px;
   background: var(--color-charcoal-700);
-  box-shadow: 0 8px 24px rgba(19,52,59,0.10);
+  box-shadow: 0 8px 24px rgba(19, 52, 59, 0.10);
   /* border-radius: 32px; */
   display: flex;
   flex-direction: row;
@@ -1539,6 +1600,7 @@ html {
   position: relative;
   min-width: 260px;
 }
+
 .card-imgbox2 {
   flex: 1 1 0;
   display: flex;
@@ -1553,7 +1615,7 @@ html {
   height: 280px;
   border-radius: 24px;
   object-fit: cover;
-  box-shadow: 0 6px 28px 0 rgba(31,33,33,0.15);
+  box-shadow: 0 6px 28px 0 rgba(31, 33, 33, 0.15);
   background: var(--color-gray-200);
 }
 
@@ -1564,7 +1626,7 @@ html {
   left: 62%;
   background: rgb(22 22 22);
   border-radius: 18px;
-  box-shadow: 0 2px 10px rgba(19,52,59,0.11);
+  box-shadow: 0 2px 10px rgba(19, 52, 59, 0.11);
   padding: 18px 20px 14px 16px;
   min-width: 250px;
   z-index: 2;
@@ -1576,11 +1638,12 @@ html {
   right: 325px;
   background: rgb(22 22 22);
   border-radius: 18px;
-  box-shadow: 0 2px 10px rgba(19,52,59,0.11);
+  box-shadow: 0 2px 10px rgba(19, 52, 59, 0.11);
   padding: 18px 20px 14px 16px;
   min-width: 330px;
   z-index: 2;
 }
+
 .float-item {
   display: flex;
   align-items: center;
@@ -1588,20 +1651,47 @@ html {
   margin-bottom: 7px;
   font-weight: 500;
 }
-.float-item:last-child { margin-bottom: 0; }
+
+.float-item:last-child {
+  margin-bottom: 0;
+}
+
 .float-label.circle {
   display: inline-block;
-  width: 19px; height: 19px;
+  width: 19px;
+  height: 19px;
   border-radius: 7px;
   margin-right: 8px;
 }
-.netflix { background: #e50914; }
-.walmart { background: #2774df; }
-.hulu { background: #1ce783; }
-.max { background: #a084e8; }
-.coffee { background: #b3683e; }
-.amazon { background: #232f3e; }
-.alert { background: #ffc107; }
+
+.netflix {
+  background: #e50914;
+}
+
+.walmart {
+  background: #2774df;
+}
+
+.hulu {
+  background: #1ce783;
+}
+
+.max {
+  background: #a084e8;
+}
+
+.coffee {
+  background: #b3683e;
+}
+
+.amazon {
+  background: #232f3e;
+}
+
+.alert {
+  background: #ffc107;
+}
+
 .float-amount {
   margin-left: auto;
   color: var(--color-text-secondary);
@@ -1623,14 +1713,16 @@ html {
   margin-left: 5%;
 }
 
-#home.page.active{
-    background-color: rgb(38 40 40);
+#home.page.active {
+  background-color: rgb(38 40 40);
 }
 
-.card-maintext.left { /* For alternated order: text left, image right */
+.card-maintext.left {
+  /* For alternated order: text left, image right */
   padding-left: 0;
   padding-right: 24px;
 }
+
 .card-maintext h2 {
   margin-top: 0;
   font-size: 1.44rem;
@@ -1638,6 +1730,7 @@ html {
   margin-bottom: 12px;
   color: var(--color-text);
 }
+
 .card-maintext p {
   color: var(--color-text-secondary);
   font-size: 1.08rem;
@@ -1659,10 +1752,13 @@ html {
   border-radius: 18px;
   max-width: 480px;
 }
-.card-maintext2.left { /* For alternated order: text left, image right */
+
+.card-maintext2.left {
+  /* For alternated order: text left, image right */
   padding-left: 25px;
   padding-right: 24px;
 }
+
 .card-maintext2 h2 {
   margin-top: 0;
   font-size: 1.44rem;
@@ -1670,12 +1766,14 @@ html {
   margin-bottom: 12px;
   color: var(--color-text);
 }
+
 .card-maintext2 p {
   color: var(--color-text-secondary);
   font-size: 1.08rem;
   line-height: 1.56;
   margin: 0 0 21px 0;
 }
+
 .learn-more-btn {
   background: var(--color-primary);
   color: var(--color-btn-primary-text);
@@ -1685,10 +1783,11 @@ html {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 1px 5px rgba(19,52,59,0.09);
+  box-shadow: 0 1px 5px rgba(19, 52, 59, 0.09);
   transition: background 0.17s;
   width: 30%;
 }
+
 .learn-more-btn:hover {
   background: var(--color-primary-hover);
 }
@@ -1703,13 +1802,19 @@ html {
     border-radius: 22px;
     padding: 18px 0;
   }
-  .card-maintext, .card-maintext.left {
+
+  .card-maintext,
+  .card-maintext.left {
     padding: 10px 7vw;
     text-align: center;
   }
+
   .card-imgbox img {
-    width: 135px; height: 135px; border-radius: 16px;
+    width: 135px;
+    height: 135px;
+    border-radius: 16px;
   }
+
   .card-float-popup {
     position: static;
     margin-bottom: 10px;
@@ -1719,10 +1824,12 @@ html {
 
 
 .team-section {
-  background-image: url("OUR TEAM.png"); /* your image */
+  background-image: url("OUR TEAM.png");
+  /* your image */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* this creates the fixed effect */
+  background-attachment: fixed;
+  /* this creates the fixed effect */
   background-repeat: no-repeat;
   min-height: 100vh;
   padding: 80px 0;
@@ -1743,8 +1850,10 @@ html {
   grid-template-columns: repeat(auto-fit, minmax(260px, fr));
   gap: 32px;
   margin-top: 40px;
-  justify-content: center; /* this centers the cards horizontally */
-  align-items: center; /* centers kids horizontally */
+  justify-content: center;
+  /* this centers the cards horizontally */
+  align-items: center;
+  /* centers kids horizontally */
   min-height: 100vh;
   flex-direction: column;
 
@@ -1752,17 +1861,21 @@ html {
 }
 
 .team-member {
-  background: rgba(0, 0, 0, 0.5); /* semi-transparent card over background */
+  background: rgba(0, 0, 0, 0.5);
+  /* semi-transparent card over background */
   border-radius: 12px;
   padding: 24px;
   color: white;
-  backdrop-filter: blur(15px); /* nice blur effect */
+  backdrop-filter: blur(15px);
+  /* nice blur effect */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease;
   margin-bottom: 50%;
   margin-left: 0px;
-  width: 100%;           /* makes the card 1.5x the grid cell width */
-  max-width: none;       /* prevents unwanted shrinking if you used max-width */
+  width: 100%;
+  /* makes the card 1.5x the grid cell width */
+  max-width: none;
+  /* prevents unwanted shrinking if you used max-width */
 
 
 
@@ -1772,26 +1885,37 @@ html {
 .team-member:hover {
   transform: translateY(-6px);
 }
+
 .team-member {
-  display: flex;          /* Make container a flexbox */
-  align-items: center;    /* Vertically center image and text */
-  gap: 1px;              /* Add some horizontal space between image and text */
+  display: flex;
+  /* Make container a flexbox */
+  align-items: center;
+  /* Vertically center image and text */
+  gap: 1px;
+  /* Add some horizontal space between image and text */
 }
 
 @media (max-width: 620px) {
   .team-member {
-  display: grid;          /* Make container a flexbox */
-  align-items: center;    /* Vertically center image and text */
-  gap: 1px;              /* Add some horizontal space between image and text */
-}
+    display: grid;
+    /* Make container a flexbox */
+    align-items: center;
+    /* Vertically center image and text */
+    gap: 1px;
+    /* Add some horizontal space between image and text */
+  }
 }
 
 /* Optional: Fix image size for consistent layout */
 .member-photo {
-  flex-shrink: 0;         /* Prevent image from shrinking */
-  width: 180px;            /* Set a fixed width */
-  height: 180px;           /* Set a fixed height */
-  display: flex;          /* Flex to center icon */
+  flex-shrink: 0;
+  /* Prevent image from shrinking */
+  width: 180px;
+  /* Set a fixed width */
+  height: 180px;
+  /* Set a fixed height */
+  display: flex;
+  /* Flex to center icon */
   justify-content: center;
   align-items: center;
 }
@@ -1804,7 +1928,7 @@ html {
 
 
 
-.colorchan{
+.colorchan {
   background-color: var(--color-surface);
 }
 
@@ -1823,9 +1947,11 @@ html {
 
 /* Mobile and smaller screen responsiveness */
 @media only screen and (max-width: 768px) {
+
   /* Containers */
   .container {
-    width: 90vw; /* narrower width on smaller screens */
+    width: 90vw;
+    /* narrower width on smaller screens */
     padding: 10px;
   }
 
@@ -1833,41 +1959,47 @@ html {
   .hero h1 {
     font-size: 1.8rem;
   }
+
   .hero .subtitle {
     font-size: 1.2rem;
   }
+
   .hero-description {
     font-size: 1rem;
   }
+
   .hero-content.two-cols {
-    display: block; /* stack columns vertically */
+    display: block;
+    /* stack columns vertically */
   }
+
   .hero-media,
   .hero-text {
     margin-bottom: 20px;
     text-align: center;
     justify-content: center;
   }
+
   video,
   img {
     width: 100%;
     height: auto;
   }
-  
+
   /* Buttons */
   .btn {
     padding: 10px;
     font-size: 1rem;
     width: 100%;
   }
-  
+
   /* Grid layouts to single column */
   .services-grid,
   .team-grid,
   .blog-grid {
     grid-template-columns: 1fr !important;
   }
-  
+
   /* Cards and sections */
   .service-card,
   .team-member,
@@ -1875,14 +2007,14 @@ html {
     margin: 0 auto;
     max-width: 90vw;
   }
-  
+
   /* Text adjustments */
   p,
   h2,
   h3 {
     line-height: 1.4;
   }
-  
+
   /* Reduce padding and margins on sections */
   .section {
     padding: 20px 10px;
@@ -1894,24 +2026,27 @@ html {
   .hero h1 {
     font-size: 1.5rem;
   }
+
   .hero .subtitle {
     font-size: 1rem;
   }
+
   .hero-description {
     font-size: 0.9rem;
   }
-  
+
   /* Smaller buttons */
   .btn {
     padding: 8px;
     font-size: 0.9rem;
   }
-  
+
   /* Further reduce padding */
   .container {
     padding: 5px;
   }
 }
+
 /* Responsive video */
 
 
@@ -1941,7 +2076,8 @@ html {
     padding: 14px 16px;
     box-sizing: border-box;
   }
-  .test23{
+
+  .test23 {
     width: 50%;
     margin-right: 50%;
   }
@@ -1999,6 +2135,7 @@ html {
   .service-vstack-card2 {
     flex-direction: column;
   }
+
   .card-imgbox2,
   .card-maintext2 {
     width: 100%;
@@ -2010,13 +2147,17 @@ html {
   .service-vstack-card2 {
     flex-direction: column;
   }
+
   .card-imgbox2 {
-    order: 0; /* video comes first */
+    order: 0;
+    /* video comes first */
     width: 100%;
     margin-bottom: 20px;
   }
+
   .card-maintext2 {
-    order: 1; /* text comes second */
+    order: 1;
+    /* text comes second */
     width: 100%;
   }
 }
@@ -2032,11 +2173,13 @@ html {
   --color-background: var(--color-charcoal-700);
   --color-surface: var(--color-charcoal-800);
   --color-text: var(--color-gray-200);
-  --color-text-secondary: rgba(167, 169, 169, 0.7); /* equivalent to var(--color-gray-300-rgb) 0.7 */
+  --color-text-secondary: rgba(167, 169, 169, 0.7);
+  /* equivalent to var(--color-gray-300-rgb) 0.7 */
   --color-primary: var(--color-teal-300);
   --color-primary-hover: var(--color-teal-400);
   --color-primary-active: var(--color-teal-800);
-  --color-secondary: rgba(119, 124, 124, 0.15); /* var(--color-gray-400-rgb) 0.15 */
+  --color-secondary: rgba(119, 124, 124, 0.15);
+  /* var(--color-gray-400-rgb) 0.15 */
   --color-secondary-hover: rgba(119, 124, 124, 0.25);
   --color-secondary-active: rgba(119, 124, 124, 0.3);
   --color-border: rgba(119, 124, 124, 0.3);
@@ -2044,19 +2187,10 @@ html {
   --color-success: var(--color-teal-300);
   --color-warning: var(--color-orange-400);
   --color-info: var(--color-gray-300);
-  --color-focus-ring: rgba(50, 184, 198, 0.4); /* var(--color-teal-300-rgb) 0.4 */
+  --color-focus-ring: rgba(50, 184, 198, 0.4);
+  /* var(--color-teal-300-rgb) 0.4 */
   --color-btn-primary-text: var(--color-slate-900);
   --color-card-border: rgba(119, 124, 124, 0.15);
   --color-card-border-inner: rgba(119, 124, 124, 0.15);
   /* Add any other dark variables you want to force */
 }
-
-
-
-
-
-
-
-
-
-
